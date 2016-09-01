@@ -24,19 +24,25 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
-<section class="recent-posts">
-    <div class="site-content">
-        <div class="blog-post">
-            <h4>From the Blog</h4>
-            <?php query_posts('posts_per_page=1'); ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_excerpt(); ?>
-                    <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-                <?php endwhile; ?>
-            <?php wp_reset_query(); ?>
-        </div>
-    </div>
-</section>
 
+<section class="featured-work">
+	<div class="site-content">
+<h4><strong>Featured Work</strong></h4>
+<ul class="homepage-featured-work">
+<?php query_posts("posts_per_page=3&post_type=case_studies"); ?>
+		<?php while ( have_posts() ) : the_post();
+				$image_1 = get_field("image_1");
+				$size = "medium";
+		?>
+			<li class="individual-featured-work">
+				<div>
+				<figure>
+					<?php echo wp_get_attachment_image($image_1, $size); ?>
+				</figure>
+					<a href="<?php the_permalink(); ?>"<h2><?php the_title(); ?></h2></a>
+			</div>
+		</li>
+				<?php endwhile; // end of the loop. ?>
+			</div><!-- .container -->
+		</section><!-- .home-page -->
 <?php get_footer(); ?>

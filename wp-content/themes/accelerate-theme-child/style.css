@@ -15,12 +15,37 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 #masthead {
-    background: none repeat scroll 0 0 #f00;
+    background: none repeat scroll 0 0 #45ac9d;
+}
+#masthead nav ul li {
+  display: inline;
+  padding-left: 35px;
 }
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+.featured-work {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10%;
+}
 
+.featured-work h4 {
+  font-family: 'Montserrat';
+  text-transform:uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+ul.homepage-featured-work {
+  list-style: none;
+  display: inline;
+}
+ul.homepage-featured-work li {
+  font-family: 'Montserrat';
+  display: inline-block;
+  padding: 8px;
+  text-align:center;
+}
 /* blog-post styling */
 .blog-post {
     width:  50%;
@@ -37,11 +62,67 @@
     font-weight: bold;
 }
 .blog-post .read-more-link {
-    /*adjusted font-size given in the assignment(24 px) in order 
+    /*adjusted font-size given in the assignment(24 px) in order
         to adhere to the mock-up's font-size, which is smaller */
-    font-size: 16px; 
+    font-size: 16px;
     font-family: 'Montserrat';
     font-weight: bold;
     color: #45ac9d;
     text-transform: uppercase;
+}
+/* Case Studies post page styles */
+article.case-study {
+  margin: 5% 0 0;
+}
+div aside.case-study-sidebar {
+  float:left;
+  width:35%;
+  display: inline-block;
+
+}
+div aside.case-study-sidebar h2 {
+  font-size: 28px;
+}
+div aside.case-study-sidebar h5, h6 {
+  margin-top: 5%;
+  font-weight: 500;
+}
+div aside.case-study-sidebar h5 {
+  font-size:16px;
+  color: #999;
+}
+div aside.case-study-sidebar h6 {
+  margin-bottom:11%;
+}
+div aside.case-study-sidebar p {
+  margin-bottom: 11%;
+}
+div aside.case-study-sidebar a {
+  font-weight: 800;
+}
+div.case-study-images {
+  float:right;
+  width: 60%;
+  display:inline-block;
+  margin-bottom: 10%;
+}
+
+/* Case Studies Archive Page styles */
+body.post-type-archive-case_studies  article.case-study {
+  display: inline-block;
+}
+body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar a h2 {
+  font-size: 28px;
+}
+body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar a strong {
+  font-size: 16px;
+}
+body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar p {
+  font-size: 16px;
+}
+body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar a, h5 {
+  font-family: 'Montserrat';
+}
+body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar h5 {
+  margin-top: 2%;
 }
