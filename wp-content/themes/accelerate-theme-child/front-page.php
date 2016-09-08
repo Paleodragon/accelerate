@@ -44,5 +44,26 @@ get_header(); ?>
 		</li>
 				<?php endwhile; // end of the loop. ?>
 			</div><!-- .container -->
+			<section class="recent-posts">
+  			<div class="site-content">
+    		<div class="blog-post">
+      		<h4>From the Blog</h4>
+					<?php query_posts('posts_per_page=1'); ?>
+  					<?php while ( have_posts() ) : the_post(); ?>
+							<h2><?php the_title(); ?></h2>
+       				<?php the_excerpt(); ?>
+       				<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+  					<?php endwhile; ?>
+					<?php wp_reset_query(); ?>
+    		</div>
+				<div class="dynamic-sidebar-widgets">
+					<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+						<div id="secondary" class="widget-area" role="complementary">
+							<?php dynamic_sidebar( 'sidebar-2' ); ?>
+						<?php endif; ?>
+					</div>
+				</div>
+  			</div>
+			</section>
 		</section><!-- .home-page -->
 <?php get_footer(); ?>

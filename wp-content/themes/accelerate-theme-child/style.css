@@ -78,7 +78,7 @@ div aside.case-study-sidebar {
   float:left;
   width:35%;
   display: inline-block;
-
+  margin-left: -10%;
 }
 div aside.case-study-sidebar h2 {
   font-size: 28px;
@@ -102,7 +102,7 @@ div aside.case-study-sidebar a {
 }
 div.case-study-images {
   float:right;
-  width: 60%;
+  width: 65%;
   display:inline-block;
   margin-bottom: 10%;
 }
@@ -125,4 +125,147 @@ body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar
 }
 body.post-type-archive-case_studies  article.case-study aside.case-study-sidebar h5 {
   margin-top: 2%;
+}
+
+/* Contact form Styles */
+label#ninja_forms_field_1_label, label#ninja_forms_field_2_label, label#ninja_forms_field_3_label {
+  font-weight: normal;
+  font-size: 14px;
+}
+div#ninja_forms_field_1_div_wrap.field-wrap.text-wrap.label-above {
+  width: 50%;
+  float: left;
+  padding-right: 2%
+}
+div#ninja_forms_field_2_div_wrap.field-wrap.text-wrap.label-above {
+  width: 50%;
+  float: right;
+  padding-left: 2%;
+}
+div#primary.site-content {
+  width: 35%;
+  margin: auto;
+}
+div#nf_submit_1 {
+  float: right;
+}
+input#ninja_forms_field_4.ninja-forms-field {
+  background: none repeat scroll 0 0 #45ac9d;
+  color: white;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 100px;
+  text-align: center;
+}
+/* About page styles */
+
+div.homepage-hero h3 p {
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+div.about-content {
+  margin-left: -10em;
+  margin-right: -10em;
+}
+div.our-services h2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  line-height: 2em;
+}
+div.our-services {
+  text-align: center;
+  padding-left: 23%;
+  padding-right: 23%;
+}
+div.field-one, div.field-two, div.field-three, div.field-four {
+  clear: both;
+  padding-top: 2%;
+}
+div.field-one div.image-odd figure, div.field-three div.image-odd figure {
+  float: left;
+  margin: 0 0 10px 10px;
+  padding-top: 3%;
+}
+
+div.field-one div.description-odd, div.field-three div.description-odd {
+  float: right;
+  width: 70%;
+  display: inline-block;
+  clear: none;
+}
+div.field-one div.description-odd h2, div.field-three div.description-odd h2 {
+  line-height: 2em;
+}
+div.field-two div.image-even figure, div.field-four div.image-even figure {
+  float: right;
+  margin: 0 0 10px 10px;
+  padding: 3%;
+}
+div.field-two div.description-even, div.field-four div.description-even {
+  float: left;
+  width: 70%;
+  display: inline-block;
+  clear: none;
+}
+div.field-two div.description-even h2, div.field-four div.description-even h2 {
+  line-height: 2em;
+}
+hr {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20%;
+}
+aside.about-contact-us h2 {
+  margin-left: 30%;
+  padding-bottom: 2em;
+  float: left;
+}
+div.btn-contact-us button {
+  background: none repeat scroll 0 0 #45ac9d;
+  color: white;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 100px;
+  text-align: center;
+  float: right;
+  margin-right: 30%;
+}
+div.btn-contact-us {
+  padding-top: 1em;
+}
+/* dynamic sidebar styles*/
+div.dynamic-sidebar-widgets {
+  float: right;
+  width: 50%;
+  margin-top: 10%;
+}
+h3.widget-title {
+  margin-bottom: 1.5em;
+}
+ul.tweets li {
+  list-style: none;
+  margin-left: -5%;
+}
+a.follow-us-link {
+  color: #45ac9d;
+  font-family: "montserrat";
+  font-weight: bold;
+  margin-left: 9%;
+}
+div.blog-post {
+  float: left;
+  width: 50%;
+}
+div.blog-post h4 {
+  text-align: left;
+}
+/*Blog page sidebar styles*/
+label.screen-reader-text {
+  color: #45ac9d;
 }
